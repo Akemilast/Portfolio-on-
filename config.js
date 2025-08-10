@@ -4,11 +4,11 @@
 const SITE_CONFIG = {
     // ===== INFORMAÇÕES BÁSICAS =====
     site: {
-        name: "Akemi Developer",
-        title: "Akemi Developer - Portfólio Profissional",
+        name: "Akemi",
+        title: "Akemi - Portfólio Profissional",
         description: "Desenvolvedor Full Stack especializado em web, mobile e desktop. Experiência em React, Node.js, Python, Java e muito mais.",
         url: "https://akemi.dev",
-        author: "Akemi Developer",
+        author: "Akemi ",
         version: "2.0.0"
     },
 
@@ -35,7 +35,7 @@ const SITE_CONFIG = {
 
     // ===== INFORMAÇÕES PESSOAIS =====
     profile: {
-        name: "Akemi Developer",
+        name: "Akemi ",
         role: "Desenvolvedor Full Stack",
         location: "Brasil",
         email: "contato@akemi.dev",
