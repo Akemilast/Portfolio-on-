@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Akemi Developer - Portfólio Profissional</title>
+    <meta name="description" content="Desenvolvedor Full Stack especializado em web, mobile e desktop. Experiência em React, Node.js, Python, Java e muito mais.">
+    <meta name="keywords" content="desenvolvedor, full stack, web, mobile, react, node.js, python, java, portfólio">
+    <meta name="author" content="Akemi Developer">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://akemi.dev/">
+    <meta property="og:title" content="Akemi Developer - Portfólio Profissional">
+    <meta property="og:description" content="Desenvolvedor Full Stack especializado em web, mobile e desktop">
+    <meta property="og:image" content="https://akemi.dev/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://akemi.dev/">
+    <meta property="twitter:title" content="Akemi Developer - Portfólio Profissional">
+    <meta property="twitter:description" content="Desenvolvedor Full Stack especializado em web, mobile e desktop">
+    <meta property="twitter:image" content="https://akemi.dev/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="logo-circle">
+                    <span class="logo-text">A</span>
+                </div>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p class="loading-text">Carregando portfólio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="logo-link">
+                    <span class="logo-icon">A</span>
+                    <span class="logo-text">Akemi Dev</span>
+                </a>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link" data-section="about">
+                    <i class="fas fa-user"></i>
+                    <span>Sobre</span>
+                </a>
+                <a href="#projects" class="nav-link" data-section="projects">
+                    <i class="fas fa-code"></i>
+                    <span>Projetos</span>
+                </a>
+                <a href="#skills" class="nav-link" data-section="skills">
+                    <i class="fas fa-tools"></i>
+                    <span>Habilidades</span>
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contato</span>
+                </a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-background">
+                <div class="hero-particles" id="hero-particles"></div>
+                <div class="hero-grid"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-code"></i>
+                    <span>Desenvolvedor Full Stack</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="title-line">Olá, eu sou</span>
+                    <span class="title-highlight">Akemi Developer</span>
+                    <span class="title-line">Criando o futuro digital</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Transformo ideias em experiências digitais excepcionais. 
+                    Especializado em desenvolvimento web, mobile e desktop com foco em performance e UX.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="4">0</span>
+                        <span class="stat-label">Anos de Experiência</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="30">0</span>
+                        <span class="stat-label">Projetos Entregues</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Tecnologias Dominadas</span>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        <span>Ver Projetos</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Falar Comigo</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span>Role para explorar</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon"><i class="fas fa-user"></i></span>
+                        Sobre Mim
+                    </h2>
+                    <p class="section-subtitle">Conheça minha jornada e paixão pela tecnologia</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="about-intro">
+                            <h3>Desenvolvedor Apaixonado por Inovação</h3>
+                            <p>
+                                Com mais de 4 anos de experiência, sou um desenvolvedor Full Stack dedicado a criar 
+                                soluções digitais que fazem a diferença. Minha jornada começou com a curiosidade de 
+                                entender como as coisas funcionam na web, e evoluiu para uma paixão por construir 
+                                experiências que inspiram e facilitam a vida das pessoas.
+                            </p>
+                        </div>
+                        
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Performance</h4>
+                                    <p>Código otimizado e aplicações rápidas</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Segurança</h4>
+                                    <p>Desenvolvimento com foco em proteção</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Responsivo</h4>
+                                    <p>Funciona perfeitamente em qualquer dispositivo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-visual">
+                        <div class="profile-card">
+                            <div class="profile-header">
+                                <div class="profile-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="profile-info">
+                                    <h4>Akemi Developer</h4>
+                                    <p>Full Stack Developer</p>
+                                </div>
+                            </div>
+                            
+                            <div class="profile-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>São Paulo, Brasil</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Ciência da Computação</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Disponível para projetos</span>
+                                </div>
+                            </div>
+                            
+                            <div class="profile-tech">
+                                <h5>Stack Principal</h5>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">TypeScript</span>
+                                    <span class="tech-tag">Python</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon"><i class="fas fa-code"></i></span>
+                        Projetos em Destaque
+                    </h2>
+                    <p class="section-subtitle">Alguns dos meus trabalhos mais recentes e relevantes</p>
+                </div>
+                
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="bot">Bot</button>
+                </div>
+                
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects will be loaded dynamically -->
+                </div>
+                
+                <div class="projects-cta">
+                    <a href="https://github.com/Akemilast" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-github"></i>
+                        <span>Ver Mais no GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon"><i class="fas fa-tools"></i></span>
+                        Habilidades & Tecnologias
+                    </h2>
+                    <p class="section-subtitle">Minhas competências técnicas e ferramentas de trabalho</p>
+                </div>
+                
+                <div class="skills-content">
+                    <div class="skills-categories">
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <i class="fas fa-globe"></i>
+                                <h3>Frontend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item" data-skill="React" data-level="90">
+                                    <div class="skill-info">
+                                        <span class="skill-name">React</span>
+                                        <span class="skill-level">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item" data-skill="Next.js" data-level="85">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Next.js</span>
+                                        <span class="skill-level">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item" data-skill="TypeScript" data-level="88">
+                                    <div class="skill-info">
+                                        <span class="skill-name">TypeScript</span>
+                                        <span class="skill-level">88%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="88"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item" data-skill="CSS/SASS" data-level="95">
+                                    <div class="skill-info">
+                                        <span class="skill-name">CSS/SASS</span>
+                                        <span class="skill-level">95%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="95"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <i class="fas fa-server"></i>
+                                <h3>Backend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item" data-skill="Node.js" data-level="88">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Node.js</span>
+                                        <span class="skill-level">88%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="88"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item" data-skill="Python" data-level="82">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Python</span>
+                                        <span class="skill-level">82%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="82"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item" data-skill="PostgreSQL" data-level="78">
+                                    <div class="skill-info">
+                                        <span class="skill-name">PostgreSQL</span>
+                                        <span class="skill-level">78%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="78"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item" data-skill="MongoDB" data-level="80">
+                                    <div class="skill-info">
+                                        <span class="skill-name">MongoDB</span>
+                                        <span class="skill-level">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <div class="category-header">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h3>Mobile & Outros</h3>
+                            </div>
+                            <div class="skills-list">
+                                <div class="skill-item" data-skill="React Native" data-level="75">
+                                    <div class="skill-info">
+                                        <span class="skill-name">React Native</span>
+                                        <span class="skill-level">75%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="75"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item" data-skill="Flutter" data-level="65">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Flutter</span>
+                                        <span class="skill-level">65%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="65"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item" data-skill="Git" data-level="90">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Git</span>
+                                        <span class="skill-level">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90"></div>
+                                    </div>
+                                </div>
+                                
+                                <div class="skill-item" data-skill="Docker" data-level="70">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Docker</span>
+                                        <span class="skill-level">70%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="70"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <span class="title-icon"><i class="fas fa-envelope"></i></span>
+                        Vamos Conversar?
+                    </h2>
+                    <p class="section-subtitle">Estou sempre aberto a novos projetos e oportunidades</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:contato@akemi.dev">contato@akemi.dev</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/Akemilast" target="_blank">@Akemilast</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Localização</h4>
+                                <span>São Paulo, Brasil</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Disponibilidade</h4>
+                                <span>Disponível para projetos</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nome</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Assunto</label>
+                                <input type="text" id="subject" name="subject" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Mensagem</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <i class="fas fa-paper-plane"></i>
+                                <span>Enviar Mensagem</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">A</span>
+                        <span class="logo-text">Akemi Dev</span>
+                    </div>
+                    <p>Transformando ideias em experiências digitais excepcionais.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/Akemilast" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Akemi Developer. Todos os direitos reservados.</p>
+                <p class="footer-quote">console.log("Obrigado pela visita! 🚀");</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scroll-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
